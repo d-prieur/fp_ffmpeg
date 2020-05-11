@@ -361,6 +361,14 @@ static const AACPCEInfo aac_pce_configs[] = {
         .reorder_map = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 },
     },
     {
+        .layout = AV_CH_LAYOUT_DECAGONAL,
+        .num_ele = { 2, 2, 2, 0 },
+        .pairing = { { 1, 1 }, { 1, 0 }, { 1, 0 }, },
+        .index = { { 0, 1 }, { 2, 0 }, { 3, 1 } },
+        .config_map = { 6, TYPE_CPE, TYPE_CPE, TYPE_CPE, TYPE_SCE, TYPE_CPE, TYPE_SCE },
+        .reorder_map = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+    },
+    {
         .layout = AV_CH_LAYOUT_HEXADECAGONAL,
         .num_ele = { 4, 2, 4, 0 },
         .pairing = { { 1, 0, 1, 0 }, { 1, 1 }, { 1, 0, 1, 0 }, },
